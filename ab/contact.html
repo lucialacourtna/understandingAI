@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!-- DEVELOPER: Lucia Lacourtna, IS117-001, Fall 2023 -->
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Understanding AI</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<link rel="stylesheet" href="../styles/contact.css">
+<link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+<header>
+  <a href="../index.html"><img src="../images/logo.png" alt="Logo image of a brain with a circuit inside""> </a>
+  <p></p>
+<h2>Understanding AI</h2>
+</header>
+
+<nav id="mobile_menu"></nav>
+  <nav id="nav_menu">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../ib.html">Incorporated Bias</a></li>
+      <li><a href="../cc.html">Copyright Concerns</a></li>
+      <li><a href="ab.html">About Us</a>
+        <ul>
+          <li><a class="current" href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+<main>
+<h2>Contact Us</h2>
+<p>We would love to hear from you! <br>Please fill out the form below with any questions, contributions, or press inquiries.</p>
+
+  <form class = "form" id="formtop">
+    <label for="name"><strong> Please enter your name:</strong></label>
+    <input class = "name" type = "text" placeholder = "Enter your  name here...">
+    <p></p>
+    <label for="email"><strong>Please enter your email:</strong></label>
+    <input type="email" id="email" name="email" placeholder="Enter your email here...">
+    <p></p>
+    <label for="why">Why are you contacting us?:</label>
+    <select name="why" id="why">
+      <option value="Questions">Questions</option>
+      <option value="Contributions">Contributions</option>
+      <option value="Press">Press</option>
+      <option value="Other">Other</option>
+    </select>
+    <p></p>
+    <div id = "subject">
+  <input id = "subject" type="text" placeholder="Enter your subject line here...">
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+  </form>  
+  <textarea form ="form" name="message" id="message" rows="5" wrap="soft" placeholder="Type your message here..."></textarea>
+  <p></p>
+  <form class="form">
+    <p></p>
+    <input class="submitButton" type="submit" value="Submit">
+    <p></p>
+  </form>
+</main>
+
+<footer>
+<p>&copy; Lucia Lacourtna </p>
+</footer>
+</body>
+</html>

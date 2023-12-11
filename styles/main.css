@@ -1,0 +1,289 @@
+/*DEVELOPER: Lucia Lacourtna, IS117-001, Fall 2023 */
+
+
+
+/* the styles for the elements body edf7f1 blue 3cd3c1 */
+* {
+  margin: 0;
+  padding: 0;
+  }
+  html {
+  background-color: #fcf5ff;
+  font-family: OCR A Std, monospace !important;
+  font-size: 100%;
+  font-weight: 700px;
+  }
+
+body{
+  background-color: #edf7f1;
+}
+
+  a:focus, a:hover {
+  font-style: italic;
+  }
+
+/*header */
+header {
+  font-family: OCR A Std, monospace !important;
+  background-color: #d9beef !important;
+  padding: 1em 0 1em 2.5%;
+  border-bottom: 3px solid #3cd3c1;
+  } 
+  header h2 {
+  font-size: 175%;
+  color: #000000;
+  line-height: 200%;
+  margin-left: 5px;
+  font-weight: bold;
+  } 
+  header img {
+  float: left;
+  height: 50px;
+  margin-left: 7px;
+  margin-right: 5px;
+  margin-top: 20px;
+  }
+header img:hover{
+transform: scale(1.1);
+transition: 1s;
+opacity: 90%;
+}
+
+	/* the styles for the navigation menu */
+#nav_menu{
+  font-family: OCR A Std, monospace !important;
+  margin-bottom: 10px;
+}
+	#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	}
+	#nav_menu ul li {
+	float: left;
+	width:25%;
+	}
+	#nav_menu ul li a {
+		display: block;
+		text-align: center;
+		padding: 1em 0;
+		text-decoration: none;
+		background-color: #3cd3c1;
+		color: white;
+		font-weight: bold;
+	}
+	#nav_menu a.current {
+	color: #b874d8;
+	}
+	#nav_menu ul ul {
+		display: none;
+	width: 100%;
+		position: absolute;
+		top: 100%;
+	}
+	#nav_menu ul ul li {
+	float: none;
+	}
+	#nav_menu ul li:hover > ul {
+	display: block;
+	}
+	#nav_menu > ul::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	
+	/* the styles for the section */
+	section {
+    font-family: OCR A Std, monospace !important;
+
+	width: 65.625%;
+	float: right;
+		padding: 0 2.5% 20px 0.5%;
+	}
+	section h1 {
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+    font-weight: bold;
+	}
+	section h2 {
+	color: #b874d8;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+  font-weight: bold;
+	}
+	section p {
+	padding-bottom: .5em;
+	}
+	section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+	}
+	section ul {
+	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
+	}
+	section li {
+	padding-bottom: .35em;
+	}
+	
+	/* the styles for the article */
+	article {
+    font-family: OCR A Std, monospace !important;
+
+	padding: .5em 0;
+	border-top: 2px solid #3cd3c1;
+	border-bottom: 2px solid #3cd3c1;
+	}
+
+	article img {
+	float: right;
+	max-width: 40%;
+		min-width: 150px;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+	}
+	
+	/* the styles for the aside */
+	aside {
+    font-family: OCR A Std, monospace !important;
+
+	width: 30%;
+	float: left;
+	padding: 0 0 20px 2.5%;
+	}
+	aside h2 {
+	color: #3cd3c1;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+  font-weight: bold;
+	}
+	
+	aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+	}
+
+
+.card{
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+.card h5{
+  font-weight: bold;
+}
+.btn{
+  background-color: #3cd3c1;
+  border-color: #3cd3c1;
+}
+
+.btn:hover{
+  background-color: #d9beef ;
+  border-color: #d9beef;
+}
+
+.line{
+  border-top: 2px solid #3cd3c1;
+
+}
+
+.carousel img{
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  border-radius: 6px;
+  border: 1.3px solid #d1d1d1;
+}
+
+.carousel-control-next,
+.carousel-control-prev , .carousel-indicators  {
+    filter: invert(50%);
+}
+	
+	/* the styles for the footer */
+	footer {
+	background-color: #3cd3c1;
+	clear: both;
+	
+	}
+	footer p {
+    font-family: OCR A Std, monospace !important;
+
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+	}
+	
+	/* style for mobile */
+	
+	#mobile_menu {
+	display: none;
+	}
+	
+	@media only screen and (max-width: 730px) {
+	section h1 {
+	font-size: 125%
+	}
+	section h2, aside h2 {
+	font-size: 110%;
+	}
+	aside h3 a {
+	font-size: 85%;
+	}
+	}
+	
+	@media only screen and (max-width: 645px){
+		header img{
+			float: none;
+		}
+		header{
+			text-align: center;
+		}
+		section{
+			float: none;
+			width:95%
+		}
+		aside{
+			float: none;
+			width: 95%;
+			padding-right: 2.5%;
+		}
+		article img{
+			max-width: 30%;
+		}
+		aside{
+			column-count:2;
+		}
+		#nav_menu{
+			display: none;
+		}
+		#mobile_menu{
+			display: block;
+		}
+		.slicknav_menu{
+			background-color: #3cd3c1 !important;
+		}
+	}
+	
+	@media only screen and (max-width:415px){
+		body{
+			font-size: 90%;
+      text-align: center;
+      padding: 0;
+      float: none;
+		}
+    section{
+      margin-left: 10px;
+    }
+    .carousel, .card{
+      height: 5%;
+    }
+    .card-body{
+      font-size: 70%;
+    }
+	}
